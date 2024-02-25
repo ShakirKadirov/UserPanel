@@ -7,7 +7,17 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+protocol ViewControllerDelegate{
+    func setUserInfo(name: String, surname: String)
+}
+
+
+class ProfileViewController: UIViewController, ViewControllerDelegate {
+    
+    func setUserInfo(name: String, surname: String) {
+        self.nameTextField.text =  name
+        self.surNameTextField.text = surname
+    }
     
     private lazy var profileImageView: UIImageView = {
         $0.image = UIImage(named: "profileImage.png")
@@ -99,6 +109,7 @@ class ProfileViewController: UIViewController {
          }
     @objc private func openSettings(){
         let vc = SettingsViewController()
+        vc.delegate = self 
         self.navigationController?.pushViewController(vc, animated: true)
     }
     private func setConstraints(){

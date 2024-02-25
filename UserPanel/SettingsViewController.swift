@@ -7,7 +7,10 @@
 
 import UIKit
 
+
 class SettingsViewController: UIViewController {
+     
+    var delegate: ViewControllerDelegate? 
     private lazy var personalDataLabel: UILabel = {
         $0.text = "Введите новые данные"
         $0.font = UIFont.systemFont(ofSize: 15)
@@ -57,6 +60,7 @@ class SettingsViewController: UIViewController {
         $0.backgroundColor = .black
         $0.layer.cornerRadius = 10
         $0.clipsToBounds = true
+        $0.addTarget(self, action: #selector(setUserInfo), for: .touchUpInside)
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UIButton())
@@ -101,6 +105,13 @@ class SettingsViewController: UIViewController {
         ])
     }
     
+    @objc private func setUserInfo(){
+        let vc = ProfileViewController()
+        let inputName = nameTextField.text ?? ""
+        let inputSurName = surNameTextField.text ?? ""
+        self.delegate?.setUserInfo(name: inputName, surname: inputSurName)
+        self.navigationController?.popViewController(animated: true)
+    }
     
     private func ofsetView() -> UIView{
         let view = UIView()

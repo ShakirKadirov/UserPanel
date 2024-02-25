@@ -106,7 +106,6 @@ class SettingsViewController: UIViewController {
     }
     
     @objc private func setUserInfo(){
-        let vc = ProfileViewController()
         let inputName = nameTextField.text ?? ""
         let inputSurName = surNameTextField.text ?? ""
         self.delegate?.setUserInfo(name: inputName, surname: inputSurName)

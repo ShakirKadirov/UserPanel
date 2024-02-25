@@ -16,6 +16,8 @@
 		C7ACCE4A2B8B354A00FFECD9 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACCE492B8B354A00FFECD9 /* TabBarView.swift */; };
 		C7ACCE4C2B8B359300FFECD9 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACCE4B2B8B359300FFECD9 /* HomeViewController.swift */; };
 		C7ACCE4E2B8B475E00FFECD9 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACCE4D2B8B475E00FFECD9 /* CustomView.swift */; };
+		C7ACCE502B8B6E7500FFECD9 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACCE4F2B8B6E7500FFECD9 /* ItemCell.swift */; };
+		C7ACCE522B8B713800FFECD9 /* ItemCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7ACCE512B8B713800FFECD9 /* ItemCellModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		C7ACCE492B8B354A00FFECD9 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		C7ACCE4B2B8B359300FFECD9 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		C7ACCE4D2B8B475E00FFECD9 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		C7ACCE4F2B8B6E7500FFECD9 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		C7ACCE512B8B713800FFECD9 /* ItemCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +69,8 @@
 				C7ACCE312B8B336600FFECD9 /* AppDelegate.swift */,
 				C7ACCE332B8B336600FFECD9 /* SceneDelegate.swift */,
 				C7ACCE4B2B8B359300FFECD9 /* HomeViewController.swift */,
+				C7ACCE4F2B8B6E7500FFECD9 /* ItemCell.swift */,
+				C7ACCE512B8B713800FFECD9 /* ItemCellModel.swift */,
 				C7ACCE352B8B336600FFECD9 /* ProfileViewController.swift */,
 				C7ACCE4D2B8B475E00FFECD9 /* CustomView.swift */,
 				C7ACCE452B8B350E00FFECD9 /* SettingsViewController.swift */,
@@ -146,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7ACCE522B8B713800FFECD9 /* ItemCellModel.swift in Sources */,
+				C7ACCE502B8B6E7500FFECD9 /* ItemCell.swift in Sources */,
 				C7ACCE362B8B336600FFECD9 /* ProfileViewController.swift in Sources */,
 				C7ACCE322B8B336600FFECD9 /* AppDelegate.swift in Sources */,
 				C7ACCE342B8B336600FFECD9 /* SceneDelegate.swift in Sources */,

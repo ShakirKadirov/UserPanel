@@ -44,7 +44,7 @@ class ProfileViewController: UIViewController, ViewControllerDelegate {
         $0.addArrangedSubview(nameTextField)
         $0.addArrangedSubview(surNameTextField)
         $0.axis = .horizontal
-        $0.alignment = .center
+        $0.alignment = .fill
         $0.distribution = .fillEqually
         $0.spacing = 0
         $0.translatesAutoresizingMaskIntoConstraints = false
